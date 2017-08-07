@@ -1,5 +1,13 @@
 html, body{
-  background-color: black;
+  background-image: url(../images/woods.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height:100%;
+}
 }
 h1{
   color: white;
@@ -10,7 +18,8 @@ h2{
   font-family: "Prompt"
 }
 #calcOutput{
-  background-color: white;
+  background-color: #9e7395;
+  opacity: 100%;
   width: 250px;
   height: 75px;
   border-top-left-radius: 2em;
@@ -22,7 +31,8 @@ h2{
  }
 
 #calculator{
-  background-color: grey;
+  background-color: #737a9e;
+  opacity: 100%;
   width: 250px;
   padding-top: 20px;
   padding-bottom: 30px;
@@ -35,7 +45,11 @@ h2{
   font-size: 2em;
 }
 .bigButton{
-  width: 93px;
+  width: 81px;
+}
+
+#deleteAll {
+  text-align: left;
 }
 
 a{

@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/jquery.roundslider/1.3/roundslider.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/jquery.roundslider/1.3/roundslider.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Prompt">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <script src="js/jquery.flexslider.js"></script>
     <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
     <meta charset="utf-8">
     <title>Calculator</title>
+    <script>
+      $(window).on(function(){
+        $('.flexslider').flexslider({
+          animation: "slide",
+          controlNav: "thumbnails",
+          slideshow: false,
+        });
+        $('.navbar a').smoothScroll({
+          offset: -100,
+        });
+      });
+    </script>
   </head>
   <body>
     <div class ="text-center">
@@ -41,5 +58,34 @@
       <a class="btn btn-primary bigButton" id="0">0</a>
       <a class="btn btn-primary bigButton" id="total">=</a>
     </div>
-  </body>
+    <div class="slider" id="slideshow">
+      <div class="flexslider">
+        <ul class="slides">
+          <li data-thumb="http://fillmurray.com/300/200">
+            <div class="innerslider">
+              <h2>Slide Number 1</h2>
+              <img src="images/calc1.jpg" />
+            </div>
+          </li>
+          <li data-thumb="http://fillmurray.com/300/200">
+            <div class="innerslider">
+              <h2>Slide Number 2</h2>
+              <img src="images/calc2.jpg" />
+            </div>
+          </li>
+          <li data-thumb="http://fillmurray.com/300/200">
+            <div class="innerslider">
+              <h2>Slide Number 3</h2>
+              <img src="images/calc3.jpg" />
+            </div>
+          </li>
+          <li data-thumb="http://fillmurray.com/300/200">
+            <div class="innerslider">
+              <h2>Slide Number 4</h2>
+              <img src="images/calc4.jpg" />
+            </div>
+          </li>
+        </div>
+      </div>
+    </body>
 </html>
